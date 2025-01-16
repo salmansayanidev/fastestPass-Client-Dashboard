@@ -1,0 +1,141 @@
+.home-banner {
+  background-color: #dbedf3;
+  padding: 50px 60px 0;
+  border-radius: 40px;
+}
+.banner-content-area {
+  margin-top: 70px;
+}
+.banner-title {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 0.9;
+  color: var(--gray-theme-color);
+  margin-bottom: 20px;
+}
+.bnner-user-name {
+  font-size: 3.6rem;
+  color: var(--gray-theme-color);
+}
+.para {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: var(--gray-theme-color);
+}
+
+/* home items section */
+.achieve-section {
+  padding: 20px 0 35px;
+}
+.achieve-sec-tag {
+  font-family: "Cabin";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #283149;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.achieve-sec-tag a {
+  color: #00adef;
+}
+.achieve-list-area {
+  background: #eff9fe;
+  border-radius: 45px;
+  padding: 10px 10px;
+}
+.achieve-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.item-title {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 25px;
+  color: var(--gray-theme-color);
+  margin-bottom: 15px;
+  height: 50px;
+}
+.item-desc {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 17px;
+  color: var(--gray-theme-color);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.achieve-list-item svg {
+  margin-bottom: 10px;
+}
+.achieve-list-item {
+  max-width: 200px;
+  height: 242px;
+  width: 100%;
+  border-radius: 45px;
+  padding: 20px 20px;
+  position: relative;
+  z-index: 0;
+}
+.achieve-list-item::before {
+  position: absolute;
+  content: " ";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 0;
+  width: 0;
+  border-radius: 45px;
+  background: #ffffff;
+  border: 1px solid #dbedf3;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.achieve-list-item:hover::before {
+  height: 100%;
+  width: 100%;
+}
+
+.achieve-list-item:hover svg path {
+  stroke: #1eae98;
+}
+.plus-btn,
+.arrow-right {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-btn-color);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.arrow-right {
+  opacity: 1;
+  visibility: visible;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.achieve-list-item:hover .plus-btn {
+  opacity: 1;
+  visibility: visible;
+}

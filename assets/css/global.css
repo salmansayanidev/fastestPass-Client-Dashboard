@@ -38,9 +38,15 @@ html {
   font-weight: 500;
 }
 
+@font-face {
+  font-family: "Century-Gothic";
+  src: url("../fonts/century-gothic-font/Century-Gothic.ttf");
+}
+
 :root {
   --cabin-font-family: "Cabin";
   --popping-font-family: "Poppins";
+  --century-gothic-font-family: "Century-Gothic";
   --gray-theme-color: #404b69;
   --primary-btn-color: #d83f31;
   --secondary-btn-color: #1eae98;

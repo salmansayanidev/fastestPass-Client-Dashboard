@@ -123,6 +123,7 @@
   max-width: 883px;
   width: 100%;
   padding: 11px 20px 11px 44px;
+  outline: none;
 }
 .search-input::placeholder {
   font-style: italic;

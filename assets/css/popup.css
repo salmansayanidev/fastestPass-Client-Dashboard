@@ -9,9 +9,6 @@
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease-in-out;
-}
-
-.popup-wrapper.add-password-popup, .popup-wrapper.add-bank-account-popup {
     visibility: hidden;
 }
 
@@ -20,9 +17,17 @@
     width: 100%;
     background: #FFFFFF;
     border-radius: 25px;
-    overflow: hidden;
+    overflow: auto;
     transition: all 0.5s ease-in-out;
     transform: scale(0);
+}
+
+.popup-wrapper.active {
+    visibility: visible;
+}
+
+.popup-wrapper.active .popup-inner {
+    transform: scale(1);
 }
 
 .popup-top-area {
@@ -105,7 +110,7 @@
     font-weight: 500;
     color: var(--gray-theme-color);
     outline: none;
-    padding: 6px 10px;
+    padding: 6.76px 10px;
     width: 100%;
 }
 
@@ -218,17 +223,6 @@ textarea.popup-field {
     opacity: 1;
 }
 
-
-
-
-.popup-wrapper.add-password-popup.active {
-    visibility: visible;
-}
-
-.popup-wrapper.add-password-popup.active .popup-inner {
-    transform: scale(1);
-}
-
 .advance-setting-area.bank_account {
     border-bottom: 1px solid #DBEDF3;
     padding-bottom: 20px;
@@ -246,6 +240,10 @@ textarea.popup-field {
 .popup-wrapper.add-bank-account-popup .popup-inner {
     height: 68.7vh;
     overflow: auto;
+}
+
+.popup-wrapper.add-items-popup .popup-inner {
+    height: 74.3vh;
 }
 
 
@@ -275,4 +273,27 @@ textarea.popup-field {
 .popup-inner::-webkit-scrollbar-thumb:hover,
 .popup-wrapper.add-bank-account-popup .popup-inner::-webkit-scrollbar-thumb:hover {
     background-color: var(--gray-theme-color);
+}
+
+.add-bank-account-popup .advance-setting-list {
+    display: inherit;
+}
+
+.add-items-popup .popup-inner {
+    max-width: 628px;
+}
+
+.add-item-btn {
+    font-size: 2.5rem;
+    color: var(--gray-theme-color);
+}
+
+.add-items-popup .popup-center-area {
+    padding: 20px 20px;
+}
+
+.add-folder .advance-setting-list-item {
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 6px 10px;
 }

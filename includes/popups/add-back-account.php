@@ -1,4 +1,4 @@
-<div class="popup-wrapper add-bank-account-popup ">
+<div class="popup-wrapper add-bank-account-popup">
     <div class="popup-inner">
         <form action="">
             <div class="popup-top-area">
@@ -38,7 +38,7 @@
                                 <i class="fa-solid fa-caret-down"></i>
                             </button>
 
-                            <div class="advance-setting-list d-block">
+                            <div class="advance-setting-list">
                                 <div class="row align-items-center">
                                     <div class="col-12 col-lg-6">
                                         <div class="advance-setting-list-item">

@@ -109,7 +109,7 @@
                                 </button>
                             </li>
                         </ul>
-                        <button class="arrow-right" type="button">
+                        <button class="arrow-right next-arrow" type="button">
                             <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </div>
@@ -119,9 +119,11 @@
     </section>
 </main>
 
+
 <?php include "./includes/popups/add-passwords.php"; ?>
 
 <?php include './includes/footer.php' ?>
+<script src="./assets/js/index.js"></script>
 
 <script>
     $('.advance-setting-btn').click(function() {
@@ -130,10 +132,10 @@
     });
 
     $(".add-pass-open-btn").click(function() {
-        $(".add-password-popup").addClass("active");
+        $(".popup-wrapper").addClass("active");
     });
 
     $(".popup-cls-btn , .popup-cancel-btn").click(function() {
-        $(".add-password-popup").removeClass("active");
+        $(".popup-wrapper").removeClass("active");
     });
 </script>

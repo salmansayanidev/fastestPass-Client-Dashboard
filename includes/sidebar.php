@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/FastPass-fevicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/slick.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
@@ -124,7 +126,7 @@
                         </li>
                         <hr class="nav-divider">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="account-setting.php" class="nav-link">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.5 12C15.2614 12 17.5 9.76142 17.5 7C17.5 4.23858 15.2614 2 12.5 2C9.73858 2 7.5 4.23858 7.5 7C7.5 9.76142 9.73858 12 12.5 12Z" stroke="#404B69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M19.7101 15.741L16.17 19.281C16.03 19.421 15.9 19.681 15.87 19.871L15.68 21.221C15.61 21.711 15.95 22.051 16.44 21.981L17.79 21.791C17.98 21.761 18.25 21.631 18.38 21.491L21.92 17.951C22.53 17.341 22.82 16.631 21.92 15.731C21.03 14.841 20.3201 15.131 19.7101 15.741Z" stroke="#404B69" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>

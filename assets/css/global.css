@@ -43,10 +43,16 @@ html {
   src: url("../fonts/century-gothic-font/Century-Gothic.ttf");
 }
 
+@font-face {
+  font-family: 'CarroisGothic-Regular';
+  src: url('../fonts/Carrois_Gothic/CarroisGothic-Regular.ttf');
+}
+
 :root {
   --cabin-font-family: "Cabin";
   --popping-font-family: "Poppins";
   --century-gothic-font-family: "Century-Gothic";
+  --carrois-gothic-font-family: 'CarroisGothic-Regular';
   --gray-theme-color: #404b69;
   --primary-btn-color: #d83f31;
   --secondary-btn-color: #1eae98;
@@ -66,12 +72,21 @@ ul {
   padding: 0;
 }
 
+.mb-20px {
+  margin-bottom: 20px;
+}
+
+.gap-10px {
+  gap: 10px;
+}
+
 /* global css */
 .dashboard-main {
   display: flex;
   justify-content: start;
   overflow: hidden;
 }
+
 .side-bar {
   height: 100vh;
   padding: 43px 0 35px;
@@ -81,11 +96,13 @@ ul {
   width: 100%;
   background-color: #eff9fe;
 }
+
 .dashboard-right-area {
   overflow: auto;
   height: 100vh;
   flex-grow: 1;
 }
+
 .primary-btn,
 .secondary-btn {
   font-style: italic;
@@ -101,10 +118,12 @@ ul {
   text-decoration: none;
   text-align: center;
 }
+
 .secondary-btn {
   background: #1eae98;
   width: 184px;
 }
+
 .cta-area {
   display: flex;
   justify-content: start;
@@ -112,11 +131,13 @@ ul {
   gap: 10px;
   margin-top: 20px;
 }
+
 .cta-area.border-btm {
   padding-bottom: 20px;
   border-bottom: 1px solid #dbedf3;
   margin-bottom: 20px;
 }
+
 .sec-sb-title {
   font-style: italic;
   font-weight: 700;
@@ -124,6 +145,7 @@ ul {
   line-height: 29px;
   color: var(--gray-theme-color);
 }
+
 .sm-title {
   font-style: italic;
   font-weight: 700;
@@ -131,6 +153,7 @@ ul {
   line-height: 25px;
   color: var(--gray-theme-color);
 }
+
 .item-desc,
 .sm-tag {
   font-style: italic;
@@ -143,16 +166,21 @@ ul {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
+
 .sm-tag {
   line-height: 25px;
   margin-bottom: 22px;
 }
-.sin-list-item-title, .source-list-item-title {
+
+.sin-list-item-title,
+.source-list-item-title {
   text-align: center;
   font-weight: 600;
 }
+
 .sin-list-item-img,
-.add-item-btn, .source-list-item-img {
+.add-item-btn,
+.source-list-item-img {
   width: 100px;
   height: 100px;
   background: #ffffff;
@@ -164,30 +192,114 @@ ul {
   margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
+
 .sin-list-item:hover .sin-list-item-img,
-.sin-list-item:hover .add-item-btn, .source-list-item:hover .source-list-item-img {
+.sin-list-item:hover .add-item-btn,
+.source-list-item:hover .source-list-item-img {
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
+
 .sin-list-item:hover .sin-list-item-img svg path,
 .sin-list-item:hover .add-item-btn i {
   stroke: #1eae98;
 }
-.sin-list-item, .source-list-item {
+
+.sin-list-item,
+.source-list-item {
   max-width: 100px;
   width: 100%;
   cursor: pointer;
 }
-.add-items-list, .source-list {
+
+.add-items-list,
+.source-list {
   display: flex;
   justify-content: start;
   align-items: start;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 .source-list {
   gap: 10px;
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #DBEDF3;
 }
- 
+
+.passwords-boxes-main {
+  margin-top: 19px;
+  border-top: 1px solid #DBEDF3;
+  padding-top: 20px;
+}
+
+/* sharing center css */
+.sharing-center-tabs-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 2px solid #1EAE98;
+  margin-bottom: 18px;
+}
+
+.share-tab-btn {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 25px;
+  text-align: center;
+  color: var(--gray-theme-color);
+  background: #FFFFFF;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-color: #DBEDF3;
+  border-radius: 25px 25px 0px 0px;
+  padding: 7px 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.share-tab-btn.active,
+.share-tab-btn:hover {
+  background-color: #1EAE98;
+  border-color: #1EAE98;
+  color: white;
+}
+
+.sharing-center-main {
+  display: none;
+}
+
+.sharing-center-main.active {
+  display: block;
+}
+
+.para {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 25px;
+  color: var(--gray-theme-color);
+}
+
+.swal2-title {
+  font-style: italic;
+  font-weight: 600 !important;
+  font-size: 1.2rem !important;
+  line-height: 29px !important;
+  color: white !important;
+}
+
+.swal2-popup.swal2-toast {
+  padding: 10px 20px !important;
+  background-color: var(--gray-theme-color) !important;
+  box-shadow: 0 0 0 0 #000 !important;
+}
+
+.swal2-timer-progress-bar {
+  background-color: black !important;
+  height: 4px !important;
+}
+
+.swal2-timer-progress-bar-container {
+  height: 4px !important;
+}

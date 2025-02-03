@@ -24,7 +24,7 @@
                                     <span class="notification-count">2</span>
                                 </button>
                             </div>
-                            <div class="profile-btn-area">
+                            <div class="profile-btn-area position-relative">
                                 <button class="profile-btn" type="button">
                                     <div class="">
                                         <img class="img-fluid profile-img" src="./assets/images/dummy-user-profile.png" alt="">
@@ -39,6 +39,23 @@
                                         </div>
                                     </div>
                                 </button>
+                                <ul class="profile-dropdown-list">
+                                    <li class="profile-dropdown-list-item">
+                                        <a class="profile-dropdown-link" href="#">
+                                            Example One
+                                        </a>
+                                    </li>
+                                    <li class="profile-dropdown-list-item">
+                                        <a class="profile-dropdown-link" href="#">
+                                            Example Two
+                                        </a>
+                                    </li>
+                                    <li class="profile-dropdown-list-item">
+                                        <a class="profile-dropdown-link" href="#">
+                                            Example Three
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

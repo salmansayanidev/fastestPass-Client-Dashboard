@@ -1,0 +1,6 @@
+.manage-tabs-view-area {
+    display: none;
+}
+.manage-tabs-view-area.active {
+    display: block;
+}

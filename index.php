@@ -120,7 +120,7 @@
 </main>
 
 
-<?php include "./includes/popups/add-passwords.php"; ?>
+<?php include "./includes/popups/add-back-account.php"; ?>
 
 <?php include './includes/footer.php' ?>
 <script src="./assets/js/index.js"></script>
@@ -137,5 +137,15 @@
 
     $(".popup-cls-btn , .popup-cancel-btn").click(function() {
         $(".popup-wrapper").removeClass("active");
+    });
+
+    $(document).ready(function() {
+        $(".popup-wrapper").click(function() {
+            $(this).removeClass("active");
+        });
+
+        $(".popup-inner").click(function(event) {
+            event.stopPropagation(); 
+        });
     });
 </script>

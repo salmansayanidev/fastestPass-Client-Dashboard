@@ -149,6 +149,8 @@ textarea.popup-field {
     width: 110px;
     border: none;
     transition: all 0.3s ease-in-out;
+    text-align: center;
+    text-decoration: none;
 }
 
 .popup-cancel-btn {
@@ -237,14 +239,14 @@ textarea.popup-field {
     gap: 10px;
 }
 
-.popup-wrapper.add-bank-account-popup .popup-inner {
+/* .popup-wrapper.add-bank-account-popup .popup-inner {
     height: 68.7vh;
     overflow: auto;
 }
 
 .popup-wrapper.add-items-popup .popup-inner {
     height: 74.3vh;
-}
+} */
 
 
 

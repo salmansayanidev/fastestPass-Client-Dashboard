@@ -80,6 +80,10 @@ ul {
   gap: 10px;
 }
 
+.line-height-auto {
+  line-height: normal !important;
+}
+
 /* global css */
 .dashboard-main {
   display: flex;
@@ -102,6 +106,25 @@ ul {
   height: 100vh;
   flex-grow: 1;
 }
+
+.dashboard-right-area::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dashboard-right-area::-webkit-scrollbar-track {
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.dashboard-right-area::-webkit-scrollbar-thumb {
+  background: #00818A;
+  border-radius: 10px;
+}
+
+.dashboard-right-area::-webkit-scrollbar-thumb:hover {
+  background: #00818A;
+}
+
 
 .primary-btn,
 .secondary-btn {
@@ -302,4 +325,110 @@ ul {
 
 .swal2-timer-progress-bar-container {
   height: 4px !important;
+}
+
+
+/*Loader Spinning*/
+.company-detail-box {
+  position: relative;
+}
+
+h1 {
+  font-size: x-large;
+  margin: 0;
+}
+
+.loaderMain {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 19px;
+  padding: 40px 10px;
+  position: absolute;
+  background: #ffffffeb;
+  z-index: 999;
+  top: 4px;
+  left: 0;
+}
+
+.loading-wrapper {
+  height: 10px;
+  width: 90%;
+  margin-inline: 5%;
+  background: #f5f5f5;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 30%;
+}
+
+.loader {
+  background-color: #00818A;
+  height: 100%;
+  width: 80%;
+  animation: loading 2s ease infinite;
+}
+
+.loaderMain:before {
+  content: '';
+  display: block;
+  /* background: #00000029; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+/*Loader Spinning*/
+
+.acc-sett-btn {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 17px;
+  text-align: center;
+  color: #404B69;
+  background-color: #EDEDED;
+  border: 1px solid #D9D9D9;
+  border-radius: 45px;
+  padding: 9px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.acc-sett-btn.btn2 {
+  color: white;
+  background-color: var(--primary-btn-color);
+  min-width: 110px;
+}
+
+.acc-sett-btn:hover {
+  background-color: white;
+  color: var(--gray-theme-color);
+  box-shadow: inset 0 0 10px 0 #000;
+}
+
+.exclaimation-circle-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #878787;
+  color: #878787;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: transparent;
 }

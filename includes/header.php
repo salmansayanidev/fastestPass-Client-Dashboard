@@ -42,17 +42,26 @@
                                 <ul class="profile-dropdown-list">
                                     <li class="profile-dropdown-list-item">
                                         <a class="profile-dropdown-link" href="#">
-                                            Example One
+                                            <i class="fa-solid fa-user-pen"></i>
+                                            <span>Account Setting</span>
                                         </a>
                                     </li>
                                     <li class="profile-dropdown-list-item">
                                         <a class="profile-dropdown-link" href="#">
-                                            Example Two
+                                            <i class="fa-solid fa-crown"></i>
+                                            <span>Go Premium</span>
                                         </a>
                                     </li>
                                     <li class="profile-dropdown-list-item">
                                         <a class="profile-dropdown-link" href="#">
-                                            Example Three
+                                            <i class="fa-regular fa-circle-question"></i>
+                                            <span>Help</span>
+                                        </a>
+                                    </li>
+                                    <li class="profile-dropdown-list-item">
+                                        <a class="profile-dropdown-link" href="#">
+                                            <i class="fa-regular fa-circle-question"></i>
+                                            <span>Logout</span>
                                         </a>
                                     </li>
                                 </ul>

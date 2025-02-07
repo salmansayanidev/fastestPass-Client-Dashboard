@@ -46,7 +46,12 @@
                     <div class="col-12 col-lg-6">
                         <div class="popup-field-area">
                             <label class="popup-field-label">Site Password</label>
-                            <input type="text" class="popup-field" name="" id="">
+                            <div class="position-relative">
+                                <input type="password" class="popup-field" name="" id="">
+                                <button class="eye-btn" type="button">
+                                    <i class="fa-regular fa-eye-slash"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 ">

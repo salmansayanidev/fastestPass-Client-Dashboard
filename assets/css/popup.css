@@ -299,3 +299,14 @@ textarea.popup-field {
     border-radius: 10px;
     padding: 6px 10px;
 }
+
+.eye-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-theme-color);
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+}

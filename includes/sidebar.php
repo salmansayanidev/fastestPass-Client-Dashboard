@@ -26,7 +26,7 @@
                 <nav class="navigation">
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="." class="nav-link">
+                            <a href="." class="nav-link active">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M22.5 8.52V3.98C22.5 2.57 21.86 2 20.27 2H16.23C14.64 2 14 2.57 14 3.98V8.51C14 9.93 14.64 10.49 16.23 10.49H20.27C21.86 10.5 22.5 9.93 22.5 8.52Z" stroke="#404B69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M22.5 19.77V15.73C22.5 14.14 21.86 13.5 20.27 13.5H16.23C14.64 13.5 14 14.14 14 15.73V19.77C14 21.36 14.64 22 16.23 22H20.27C21.86 22 22.5 21.36 22.5 19.77Z" stroke="#404B69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

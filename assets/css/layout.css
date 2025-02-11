@@ -23,6 +23,14 @@
   color: #00818a;
 }
 
+.nav-link.active {
+  color: #00818a;
+}
+
+.nav-link.active svg path {
+  stroke: #00818a;
+}
+
 .nav-link:hover svg path {
   stroke: #00818a;
 }

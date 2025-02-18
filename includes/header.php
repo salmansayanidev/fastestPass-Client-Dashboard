@@ -60,7 +60,7 @@
                                     </li>
                                     <li class="profile-dropdown-list-item">
                                         <a class="profile-dropdown-link" href="#">
-                                            <i class="fa-regular fa-circle-question"></i>
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
                                             <span>Logout</span>
                                         </a>
                                     </li>

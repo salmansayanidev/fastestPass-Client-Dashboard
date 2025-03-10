@@ -140,6 +140,7 @@ ul {
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  border: none;
 }
 
 .secondary-btn {

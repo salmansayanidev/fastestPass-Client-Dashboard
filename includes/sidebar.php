@@ -74,7 +74,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="payment-cards.php" class="nav-link">
                                 <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2.5 12.6094H19.5" stroke="#404B69" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                                     <path d="M19.5 10.2808V17.4308C19.47 20.2808 18.69 21.0008 15.72 21.0008H6.28003C3.26003 21.0008 2.5 20.2508 2.5 17.2708V10.2808C2.5 7.58078 3.13 6.71078 5.5 6.57078C5.74 6.56078 6.00003 6.55078 6.28003 6.55078H15.72C18.74 6.55078 19.5 7.30078 19.5 10.2808Z" stroke="#404B69" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
